@@ -2,25 +2,35 @@
 	margin:0;
 	padding: 0;
 }
-
+body{
+	font-family:  arial;
+}
+/* INICIO CABECERA  */ 
 header{
-	border: 1px solid red;
-	height: 100px;
+	/*border: 1px solid red;*/
+	 /* quitar el alto al final height:100px; */
+	background-color:#2C3E50;
+	position: fixed;
+	width: 100%;
+
 }
 
-header .centrado{
-	border: 1px solid blue;
+.centrado{
+	border: 1px solid transparent;
 	width: 1000px;
 	margin: 0 auto;
-	overflow: hidden;
+
 }
 .titleTop{
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	display: inline-block;
 	margin:30px 0 0 40px;
+	color: white;
 }
+
+
 .menu{
-	border: 1px solid orange;
+	/*border: 1px solid orange;*/
 	display: inline-block;
 	float: right;
 	margin-top:20px;
@@ -28,7 +38,7 @@ header .centrado{
 
 .menu ul li{
 	display: inline-block;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	margin: 5px 10px;
 }
 .menu ul  li a{
@@ -36,6 +46,216 @@ header .centrado{
 	color: white;
 	display: block;
 	padding: 10px 25px;
-	font-family:  arial;
-	background-color: #223C50;
+	border-radius: 10px;
+	transition: 1s;
+
 }
+.menu ul li a:hover{
+	background-color: #5D2E8C;
+	
+}
+
+/* FIN  CABECERA  */ 
+
+/* INICIO PORTADA */ 
+section.portada{
+	background-color:#EDEDED; 
+	padding-top: 100px;
+
+}
+section.portada .centrado{
+	text-align: center;
+}
+
+.imgPortada{
+	margin: 80px 0 30px 0;
+	/*border: 1px solid red;*/
+
+}
+.imgPortada img{
+	border-radius: 220px;
+	/*border: 5px solid black;*/
+
+}
+.nombre{
+	color: #003571;
+	font-size: 32px; 
+	/*border: 1px solid red;*/
+	font-family: 'Sedgwick Ave', cursive;
+
+}
+.subtitulo{
+	/*border: 1px solid green;*/
+	font-size: 26px;
+	margin:10px 0 80px 0;
+	font-family: 'Sedgwick Ave', cursive;
+
+	
+}
+/* FIN PORTADA */ 
+
+/* Inicio SKILLS */
+
+.skills{
+	background-color:#5D2E8C ;
+	color: white;
+}
+.titulo{
+	text-align: center;
+	margin:80px 0 50px 0; 
+	font-size: 40px;
+	font-family: 'Sedgwick Ave', cursive;
+
+}
+.textoSub{
+	font-size: 30px;
+	color: white;
+	margin-bottom: 15px;
+}
+.listado{
+	list-style: none;
+	/*border: 1px solid yellow;*/
+	list-style-image: url('../images/check.png'); 
+	margin: 0 0 80px 40px;
+}
+.listado li{
+	margin: 20px 0;
+}
+
+/* FIN SKILLS*/
+
+/* BIO */ 
+.bio{
+	background-color:#EDEDED;
+}
+.bio .titulo{
+	color: #003571;
+}
+.parte-a, .parte-b {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	vertical-align: top;
+	/*background-color: #003571;*/
+	color: white;
+	padding: 10px 0 10px 0;
+	/*border-radius: 20px;*/
+}
+.parte-a{
+	margin-left:20px;
+}
+.parte-b {
+	padding: 20px 40px;
+}
+.item{
+	/*border: 1px solid red;*/
+	margin: 10px 10px 15px 0;
+}
+.item figure, .item div{
+	display: inline-block;
+	/*border: 1px solid red;*/
+	vertical-align: top;
+}
+.item figure img {
+	width: 100px;
+	border-radius: 100px;
+	/*border: 1px solid black;*/
+}
+.item p{
+	font-weight: bold;
+	margin:10px 15px;
+}
+.item span{
+	margin:10px 15px;
+	display: block;
+	/*border:1px solid red;*/
+}
+
+/* lado derecho*/ 
+.item-b figure, .item-b div{
+	display: inline-block;
+	/*border: 1px solid green;*/
+	vertical-align: middle;
+}
+.item-b figure img{
+	width:50px;
+}
+.item-b div{
+	margin-left: 10px;
+}
+.item-b{
+	margin: 20px 0;
+}
+.parte-b{
+	margin-left: 40px;
+	height: 355px;
+}
+.parte-b a{
+	color: white;
+	text-decoration: none;
+}
+.fixContent{
+	background-color: #003571;
+	color: white;
+	padding: 10px 0 10px 0;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+/* fin lado derecho */
+
+.contact{
+	background-color:#5D2E8C ;
+	color: white;
+	padding-bottom: 50px; 
+}
+.form , .ubica{
+	display: inline-block;
+	/*border: 1px solid white; */
+	vertical-align: top;
+}
+iframe{
+	border-radius: 10px;
+}
+.form{
+	width: 350px;
+	margin-right: 30px;
+
+}	
+.form label{
+	display: inline-block;
+	width: 80px;
+	margin:10px 0 10px 0;
+}
+.form input{
+	width: 250px;
+	height: 25px;
+	border-radius: 5px;
+	padding-left:5px; 
+}
+textarea{
+	color:black;
+	font-family: 'Sedgwick Ave', cursive;
+	width: 320px;
+	padding: 10px;
+	margin-top:10px;
+ 	border-radius: 5px;
+}
+.boton{
+	background-color:#007dc1;
+	border: 0;
+	padding: 10px 20px;
+	color: white;
+	border-radius: 20px;
+	width: 100%;
+	font-size: 20px;
+	margin:10px 0;
+}
+footer{
+	height: 30px;
+	background-color:black;
+	color:white;
+	padding: 30px 0;
+}
+footer p{
+	text-align: center;
+}
+/* FIN BIO*/

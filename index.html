@@ -3,9 +3,11 @@
 <head>
 	<title>PortFolio</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
 </head>
 <body>
-<header>
+<!-- INICIO CABECERA -->
+<header >
 	<div class="centrado">
 		<h2 class="titleTop">
 			Mi Portfolio
@@ -13,123 +15,175 @@
 
 		<nav class="menu">
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de mí</a></li>
-				<li><a href="#">Contactame</a></li>
+				<li><a href="#portada">Inicio</a></li>
+				<li><a href="#acerca">Acerca de mí</a></li>
+				<li><a href="#bio">Bio</a></li>
+				<li><a href="#contact">Contactame</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
+<!--  FIN  CABECERA -->
 
-
-<section>
-	<figure>
-		<img src="images/user.jpg" alt="Victor Caballero">
-	</figure>
-	<h1>Victor Caballero</h1>
-	<h3>Estudiante de Ingeniería y Arquitetura</h3>
-</section>
-<section>
-	<h2> Acerca de mí</h2>
-	<p> Cuento con las siguientes habilidades:</p>
-	<ul>
-		<li>
-			Aplicar los conocimientos teóricos, las habilidades y las destrezas adquiridas, en la solución de problemas.
-		</li>
-
-		<li>
-			Participar de forma activa y constante en trabajos en equipo.
-		</li>
-
-		<li>
-			Contribuir a la ejecución de los planes de desarrollo de proyectos de innovación tecnológica.
-		</li>
-
-		<li>
-			Demostrar un nivel de compromiso y madurez hacia las responsabilidades contraídas basado en un eficiente desempeño.
-		</li>
-	</ul>
-</section>
-<section>
-	<h2> Educación / Redes Sociales </h2>
-	<div>
-			<article>
-				<figure><img src="images/imgpc.jpg" alt=""></figure>
-				<p>Computación e Informatica</p>
-				<span>
-					USMP - Estudiante de Ingeniería de Computacion y Sistmas 
-				</span>	
-				<span>
-					<strong>2017 - Actualidad ( Primer ciclo)</strong>
-				</span>
-
-			</article>
-			
-			<article>
-				<figure><img src="images/imgen.jpg" alt=""></figure>
-				<p>Ingles</p>
-				<span>BRITANICO 2014 - 2016  <strong>(Nivel intermedio)</strong></span> 
-			</article>
-
-			<article>
-				<figure><img src="images/imgHobby.jpg" alt=""></figure>
-				<p>Hobby</p>
-				<span>Soy un Jugador Pro en StarCraft , mi mejor raza es la Protoss,
-				he participado en la WCG </span>
-			</article>
-
-	</div>
-
-	<div>
-		<div>
-			<figure>
-				<img src="images/face.png" alt="">
-			</figure>
-			<p> <a href="">FB/blogdopata</a></p>
-		</div>
-		<div>
-			<figure>
-				<img src="images/twitter.png" alt="">
-			</figure>
-			<p> <a href="">TW/blogdopata</a></p>
-		</div>
-		<div>
-			<figure>
-				<img src="images/instagram.png" alt="">
-			</figure>
-			<p> <a href="">INS/blogdopata</a></p>
-		</div>
-		<div>
-			<figure>
-				<img src="images/git.png" alt="">
-			</figure>
-			<p> <a href="">GIT/blogdopata</a></p>
-		</div>
-
+<!-- INICIO  Portada -->
+<section class="portada" id="portada">
+	<div class="centrado">
+		<figure class="imgPortada">
+			<img src="images/user3.png" alt="Victor Caballero">
+		</figure>
+		<h1 class="nombre">Victor Caballero</h1>
+		<h3 class="subtitulo">Estudiante de Ingeniería de Computación y Sistemas</h3>
 	</div>
 </section>
-<section>
-	<h2>Contactame</h2>
-	<form action="post">
-		<label for="nombre">Nombre:</label>
-		<input type="text" id="nombre">
-		<label for="">Email:</label>
-		<input type="email">
-		<label for="">Telef:</label>
-		<input type="tel">
-		<textarea  cols="60" rows="10">
-			
+<!-- FIN PORTADA-->
 
-		</textarea>
+<!-- INICIO  skills-->
+<section class="skills" id="acerca">
+	<div class="centrado">
+		<h2 class="titulo"> Acerca de mí</h2>
+		<p class="textoSub"> Cuento con las siguientes habilidades:</p>
+		<ul class="listado">
+			<li>
+				Aplicar los conocimientos teóricos, las habilidades y las destrezas adquiridas, en la solución de problemas.
+			</li>
 
-	</form>
+			<li>
+				Participar de forma activa y constante en trabajos en equipo.
+			</li>
+
+			<li>
+				Contribuir a la ejecución de los planes de desarrollo de proyectos de innovación tecnológica.
+			</li>
+
+			<li>
+				Demostrar un nivel de compromiso y madurez hacia las responsabilidades contraídas basado en un eficiente desempeño.
+			</li>
+			<li>
+				Implementar nuevas tecnologías para facilitar el funcionamiento de los sistemas actuales.
+			</li>
+			<li>
+				Comprender la organización y características del sector actual correspondiente.
+			</li>
+		</ul>
+	</div>	
+</section>
+
+<!-- FIN  skills-->
+
+<section class="bio" id="bio">
+	<div class="centrado">
+		<h2 class="titulo"> Educación / Mis Redes  </h2>
+		<div class="fixContent">
+			<div class="parte-a">
+					<article class="item">
+						<figure>
+							<img src="images/imgpc.png" alt="Comp.infor.">
+						</figure>
+						<div>
+							<p >Computación e Informatica</p>
+							<span>
+								USMP - Estudiante de Ingeniería de Computacion y Sistemas  <br>
+
+								<strong>2017 - Actualidad ( Primer ciclo)</strong>
+							</span>
+						</div>
+					</article>
+					
+					<article class="item">
+						<figure>
+							<img src="images/imgeng.png" alt="">
+						</figure>
+						<div>
+							<p>Ingles</p>
+							<span>BRITANICO 2014 - 2016  (Nivel intermedio)</span> 
+						</div>
+					</article>
+
+					<article class="item">
+						<figure>
+							<img src="images/imgHobby.jpg" alt="">
+						</figure>
+						<div>
+							<p>Hobby</p>
+							<span>Soy un Jugador Pro en StarCraft ,  <br>mi mejor raza es la Protoss,
+							he participado en la WCG </span>
+						</div>
+					</article>
+
+			</div>
+
+			<div class="parte-b">
+				<div class="item-b">
+					<figure>
+						<img src="images/face.png" alt="">
+					</figure>
+					<div>
+						<p> <a href="#">FB/blogdopata</a></p>
+					</div>
+				</div>
+				<div class="item-b">
+					<figure>
+						<img src="images/twitter.png" alt="">
+					</figure>
+					<div>
+						<p> <a href="#">TW/blogdopata</a></p>
+					</div>
+				</div>
+				<div class="item-b">
+					<figure>
+						<img src="images/instagram.png" alt="">
+					</figure>
+					<div>
+						<p> <a href="#">INS/blogdopata</a></p>
+					</div>
+				</div>
+				<div class="item-b">
+					<figure>
+						<img src="images/git.png" alt="">
+					</figure>
+					<div>
+						<p> <a href="#">GIT/blogdopata</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contact" id="contact">
+	<div class="centrado">
+		<h2 class="titulo">Contactame</h2>
+		
+
+		<div class="form">
+			<form action="post">
+				<label for="nombre">Nombre:</label> 
+				<input required type="text" id="nombre"> <br>
+				<label for="">Email:</label> 
+				<input type="email"  required ><br>
+				<label for="">Telef:</label>
+				<input type="tel"  required ><br>
+				<textarea  required placeholder="Dime que cuentas ..." cols="45" rows="10"></textarea>
+
+				<button class="boton">
+					Contactame
+				</button>
+			</form>
+		</div>
+		<div class="ubica">
+			<h3 align="center">HeadQuarters</h3> <br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.4100337267305!2d-76.94350172416559!3d-12.072765654811393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x244c0d1a7cddcfbd!2sUSMP!5e0!3m2!1ses!2spe!4v1501897019988" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
 </section>
 <footer>
-	<p>
-		Sugerencias y Comentarios : Webmaster
-	Copyright © 2017 Taller CEA - FIA, USMP.
-			Todos los derechos reservados
-	</p>
+	<div class="centrado">
+		<p>
+			Sugerencias y Comentarios : Webmaster 
+		Copyright © 2017 Taller CEA - FIA, USMP. <br>
+				Todos los derechos reservados
+		</p>
+	</div>
 </footer>
 
 </body>
